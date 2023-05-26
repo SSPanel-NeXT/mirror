@@ -29,11 +29,12 @@ install -m 644 %{_builddir}/%{name}-%{version}/README.md %{buildroot}/usr/local/
 install -m 644 %{_builddir}/%{name}-%{version}/LICENSE %{buildroot}/usr/local/xrayr/LICENSE
 install -m 644 %{_builddir}/%{name}-%{version}/config.yml.example %{buildroot}%{_sysconfdir}/xrayr/config.yml
 install -m 644 %{_builddir}/%{name}-%{version}/xrayr.service %{buildroot}%{_sysconfdir}/systemd/system
-ln -s %{buildroot}/usr/local/xrayr/xrayr %{buildroot}%{_bindir}/xrayr
 
 %post
+ln -s /usr/local/xrayr/xrayr %{_bindir}/xrayr
 
 %postun
+rm -f %{_bindir}/xrayr
 
 %clean
 rm -rf %{buildroot}
@@ -53,7 +54,6 @@ rm -rf %{buildroot}
 %attr(0644, root, root) %{_sysconfdir}/xrayr
 %attr(0644, root, root) %{_sysconfdir}/xrayr/config.yml
 %attr(0644, root, root) %{_sysconfdir}/systemd/system/xrayr.service
-%{_bindir}/xrayr
 
 %changelog
 * Sun Jul 24 2022 SSPanel-UIM Team <package@sspanel.org> - 0.9.0-1
