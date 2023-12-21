@@ -12,7 +12,7 @@ LimitRSS=infinity
 LimitCORE=infinity
 LimitNOFILE=999999
 WorkingDirectory=/usr/local/xrayr/
-ExecStart=/usr/local/xrayr/xrayr -config /etc/xrayr/config.yml
+ExecStart=/usr/local/xrayr/xrayr --config /etc/xrayr/config.yml
 Restart=on-failure
 RestartSec=10
 
