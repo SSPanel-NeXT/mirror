@@ -1,1 +1,1 @@
-deb [trusted=yes] https://mirror.sspanel.org/repo/deb /
+deb [trusted=yes] https://mirror.sspanel.org/repo/deb stable main
