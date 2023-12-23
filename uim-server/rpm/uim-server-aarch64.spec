@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        SSPanel-UIM Server (XrayR Edition) is a fork of XrayR with full WebAPI support & bugfixes.
 Group:          Unspecified
 License:        MPL-2.0
-URL:            https://github.com/sspanel-uim/XrayR
+URL:            https://github.com/SSPanel-UIM/UIM-Server
 Packager:       SSPanel-UIM Team <package@sspanel.org>
 BuildRequires:  systemd
 
