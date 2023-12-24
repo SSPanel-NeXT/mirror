@@ -56,5 +56,5 @@ rm -rf %{buildroot}
 %attr(0644, root, root) %{_sysconfdir}/systemd/system/uim-server.service
 
 %changelog
-* Sun Jul 24 2022 SSPanel-UIM Team <package@sspanel.org> - 0.9.1-1
- - https://github.com/sspanel-uim/XrayR/releases/tag/v0.9.1
+* Sun Dec 23 2023 SSPanel-UIM Team <package@sspanel.org> - 0.1.0-1
+ - https://github.com/SSPanel-UIM/UIM-Server/releases/tag/v0.1.0
