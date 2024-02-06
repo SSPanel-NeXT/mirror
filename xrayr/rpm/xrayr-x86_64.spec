@@ -27,7 +27,7 @@ install -m 644 %{_builddir}/%{name}-%{version}/geoip.dat %{buildroot}/usr/local/
 install -m 644 %{_builddir}/%{name}-%{version}/geosite.dat %{buildroot}/usr/local/xrayr/geosite.dat
 install -m 644 %{_builddir}/%{name}-%{version}/README.md %{buildroot}/usr/local/xrayr/README.md
 install -m 644 %{_builddir}/%{name}-%{version}/LICENSE %{buildroot}/usr/local/xrayr/LICENSE
-install -m 644 %{_builddir}/%{name}-%{version}/config.yml.example %{buildroot}%{_sysconfdir}/xrayr/config.yml
+install -m 644 %{_builddir}/%{name}-%{version}/config.yml.example %{buildroot}%{_sysconfdir}/xrayr/config.yml.example
 install -m 644 %{_builddir}/%{name}-%{version}/xrayr.service %{buildroot}%{_sysconfdir}/systemd/system
 
 %post
@@ -52,7 +52,7 @@ rm -rf %{buildroot}
 %attr(0644, root, root) /usr/local/xrayr/README.md
 %attr(0644, root, root) /usr/local/xrayr/LICENSE
 %attr(0644, root, root) %{_sysconfdir}/xrayr
-%attr(0644, root, root) %{_sysconfdir}/xrayr/config.yml
+%attr(0644, root, root) %{_sysconfdir}/xrayr/config.yml.example
 %attr(0644, root, root) %{_sysconfdir}/systemd/system/xrayr.service
 
 %changelog
