@@ -1,5 +1,5 @@
-[sspanel-uim]
-name=SSPanel-UIM RPM Repository
-baseurl=https://mirror.sspanel.org/repo/fedora/$releasever/$basearch
+[next-panel]
+name=NeXT RPM Repository
+baseurl=https://mirrors.nextpanel.dev/repo/fedora/$releasever/$basearch
 enabled=1
 gpgcheck=0

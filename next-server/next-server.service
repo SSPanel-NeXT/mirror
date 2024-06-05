@@ -1,5 +1,5 @@
 [Unit]
-Description=SSPanel-UIM Server (XrayR Edition)
+Description=NeXT Server
 After=network.target nss-lookup.target
 Wants=network.target
 
@@ -11,10 +11,10 @@ LimitAS=infinity
 LimitRSS=infinity
 LimitCORE=infinity
 LimitNOFILE=999999
-WorkingDirectory=/usr/local/uim-server/
-ExecStart=/usr/local/uim-server/uim-server --config /etc/uim-server/config.yml
+WorkingDirectory=/usr/local/next-server/
+ExecStart=/usr/local/next-server/next-server --config /etc/next-server/config.yml
 Restart=on-failure
-RestartSec=10
+RestartSec=30
 
 [Install]
 WantedBy=multi-user.target

@@ -1,6 +1,0 @@
-Package: uim-server
-Version: 0.0.1
-Architecture: amd64
-Maintainer: SSPanel-UIM Team <package@sspanel.org>
-Homepage: https://github.com/SSPanel-UIM/UIM-Server
-Description: SSPanel-UIM Server (XrayR Edition) is a fork of XrayR with full WebAPI support & bugfixes.

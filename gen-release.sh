@@ -15,14 +15,14 @@ do_hash() {
 }
 
 cat << EOF
-Origin: SSPanel-UIM
-Label: SSPanel-UIM
+Origin: NeXT Panel
+Label: NeXT Panel
 Suite: stable
 Codename: stable
 Version: 1.0
 Architectures: amd64 arm64
 Components: main
-Description: SSPanel-UIM Deb Repository
+Description: NeXT Deb Repository
 Date: $(date -Ru)
 EOF
 do_hash "MD5Sum" "md5sum"
